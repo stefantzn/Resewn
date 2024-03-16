@@ -3,6 +3,7 @@ import SubSuggestionForm from './pages/SubSuggestionForm'
 import NotFoundPage from './pages/NotFoundPage'
 import HomePage from "./pages/HomePage";
 import LayoutBar from "./components/LayoutBar";
+import Cart from "./pages/Cart";
 
 export const App = () => {
     return (
@@ -12,6 +13,7 @@ export const App = () => {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/suggest" element={<SubSuggestionForm />} />
+                    <Route path="/cart" element={<Cart />} />
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
             </Router>

@@ -37,10 +37,13 @@
     text-align: right;
     margin: 10px;
     width: 50%;
+    align-items: center;
 }
 
 .header-block-text {
     font-size: 3.5em;
+    padding-block: 1em;
+    line-height: 1.2;
     max-width: 80%;
 }
 
@@ -60,6 +63,7 @@
     box-sizing: border-box;
     display: block;
     margin: auto;
+    padding-block: 0.3em;
   }
 
   .form-button {
@@ -78,6 +82,7 @@
   .form-question {
     display: flex;
     justify-content: center;
+    padding-block: 0.8em;
   }
 
   .clothing-suggestion {
@@ -102,3 +107,79 @@
     margin-left: 2em;
     border: 3px solid;
   }
+
+/* Home page styles */
+.home-big-block-backer {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: rgb(240, 239, 235);
+
+}
+
+.home-big-block-wrapper {
+  padding-inline: 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.home-big-block-text-column {
+  width: 50%;
+  padding-right: 5rem;
+}
+
+.home-big-block-text-header {
+  font-size: 4rem;
+  line-height: 1em;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.home-big-block-text-para {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.home-big-block-button {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.home-green-block-backer {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  background-color: #a8b0a0;
+}
+
+.home-green-block-wrapper {
+  margin-right: 2rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.green-image {
+  width: 900px;
+  height: auto;
+}
+
+.home-green-block-text-column {
+  width: 40%;
+  padding-left: 4rem;
+  text-align: right;
+}
