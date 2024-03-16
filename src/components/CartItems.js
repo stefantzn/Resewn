@@ -32,21 +32,21 @@ const CartItems = () => {
                 <tr className='border-dashed border-b'>
                   <td className='py-5'>
                     <div className='flex items-center space-x-3 py-2'>
-                      <img src="/products/GreyPants.png" alt="" className='w-[100px] h-auto border rounded p-2' style={{overflow:'hidden'}}/>
+                      <img src="/products/BetterTogether.png" alt="" className='w-[100px] h-auto border rounded p-2' style={{overflow:'hidden'}}/>
                       <div>
-                      <h1 className='text-xl font-bold'>Kids Classic Sweatpants</h1>
-                      <p>Kids Sweatpants</p>
+                      <h1 className='text-xl font-bold'>Better Together Hoodie</h1>
+                      <p>Kids Hoodies</p>
                     </div>
                     </div>
                     
                   </td>
-                  <td>$20.00</td>
+                  <td>$30.00</td>
                   <td>
                     <div className='border w-24 p-2'>
                       <input type="number" value={quantity} className='w-full outline-0' onChange={handleQuantityChange}/>
                     </div>
                   </td>
-                  <td>${quantity * 20}.00</td>
+                  <td>${quantity * 30}.00</td>
                   <td>
                     <button>
                       <AiFillDelete size={"1.5rem"}/>
@@ -65,7 +65,7 @@ const CartItems = () => {
           <div className='w-[40%] h-fit border rounded p-5 space-y-5'>
             <div className='flex justify-between items-center border-b border-dashed p-2'>
               <h1 className='text-xl'>Sub Total</h1>
-              <p>${quantity * 20}.00</p>
+              <p>${quantity * 30}.00</p>
             </div>
             <div className='flex justify-between items-center border-b border-dashed p-2'>
               <h1 className='text-xl'>Discount</h1>
@@ -77,7 +77,7 @@ const CartItems = () => {
             </div>
             <div className='flex justify-between items-center p-2'>
               <h1 className='text-xl'>Total</h1>
-              <p>${quantity * 20 + 10}.00</p>
+              <p>${quantity * 30 + 10}.00</p>
             </div>
             <button className='w-full p-2 bg-gray-800 text-center text-white rounded'>
               Check Out
