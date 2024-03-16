@@ -6,9 +6,7 @@ import "./componentStyles.css"
 const LayoutBar = () => {
   return (
     <div className="layout-bar">
-      <a>
         <Link to="/"><Logo width={"60px"} height={"60px"}/></Link>
-      </a>
       
       <nav>
         <ul>

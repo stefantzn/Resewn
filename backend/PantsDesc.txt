@@ -1,0 +1,5 @@
+black, neutral colors, solid, sporty, loose-fitting
+blue, neutral colors, solid, jeans, casual, fitted
+pink, red, bright colors, patterns, flower-pot, casual, loose-fitting
+black, neutral colors, solid, casual, loose-fitting, no strings
+gray, neutral colors, patterns, casual, loose-fitting, no strings

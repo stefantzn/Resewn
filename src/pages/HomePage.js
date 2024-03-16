@@ -11,7 +11,7 @@ const HomePage = () => {
             <div className="home-big-block-text-column">
               <h1 className="home-big-block-text-header">SALE</h1>
               <p className="home-big-block-text-para">Join us in the journey towards a greener future with our curated collection of sustainable and stylish secondhand clothes for eco-conscious families.</p>
-            <button class="px-8 py-4 rounded font-medium mr-2 mb-8" className="home-big-block-button"><Link to="/shop">See our big sale</Link></button>
+            <button className="px-8 py-4 rounded font-medium mr-2 mb-8 home-big-block-button"><Link to="/shop">See our big sale</Link></button>
             </div>
             <img src="/ClothesDisplayHeader.png"/>
           </div>
