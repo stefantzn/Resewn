@@ -37,10 +37,13 @@
     text-align: right;
     margin: 10px;
     width: 50%;
+    align-items: center;
 }
 
 .header-block-text {
     font-size: 3.5em;
+    padding-block: 1em;
+    line-height: 1.2;
     max-width: 80%;
 }
 
@@ -60,6 +63,7 @@
     box-sizing: border-box;
     display: block;
     margin: auto;
+    padding-block: 0.3em;
   }
 
   .form-button {
@@ -78,6 +82,7 @@
   .form-question {
     display: flex;
     justify-content: center;
+    padding-block: 0.8em;
   }
 
   .clothing-suggestion {
