@@ -1,0 +1,78 @@
+.layout-bar {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .layout-bar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .layout-bar nav ul li {
+    margin-right: 2.4em;
+    font-size: 1.1em;
+  }
+  
+  .layout-bar nav ul li:last-child {
+    margin-right: 1.5em;
+  }
+  
+  .layout-bar nav ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .layout-bar nav ul li a:hover {
+    color: #ec75b6;
+  }
+
+  /* Marketplace Styles */
+  .marketplace-page {
+    padding: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 1.2em;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+  }
+  
+  .product img {
+    width: 100%;
+  }
+  
+  .product h3 {
+    margin: 10px 0;
+  }
+  
+  .product p {
+    margin: 0;
+  }
+  
+  .product button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: #0056b3;
+  }

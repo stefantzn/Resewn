@@ -76,7 +76,7 @@ export default function SubSuggestionForm() {
       <div className="big-header-block">
         <div className="header-block-column">&nbsp;</div>
         <div className="header-block-column">
-            <p className="header-block-text">Find the sustainable fit that <strong>resonates</strong> best with you</p>
+            <p className="header-block-text">Find the sustainable fit that <strong>resonates</strong> best with your family</p>
         </div>
       </div>
       <form className="suggest-form" onSubmit={onSubmit}>
