@@ -22,6 +22,11 @@ def make_list_desc(reference: str):
 # Note that the structure of the SweaterDesc.txt and images have to be very specific
 # they must correspond to each other.
 sweater_desc = make_list_desc("SweaterDesc.txt")
+pants_desc = make_list_desc("PantsDesc.txt")
+
+# Get the names of the product
+sweater_names = make_list_desc("SweaterNames.txt")
+pants_names = make_list_desc("PantsNames.txt")
 
 # Route only for /api/home
 @app.route("/api/home", methods=['GET'])
@@ -38,12 +43,29 @@ def query_similar():
     request_data = request.get_json()
     data = request_data['preferences']
     sweater_index_list = find_similar_text(data, model, sweater_desc)
+    pants_index_list = find_similar_text(data, model, pants_desc)
     sweater_paths = []
+    sweater_names_return = []
     for index in sweater_index_list:
         sweater_paths.append("Sweater/" + str(index + 1) + ".png")
+        sweater_names_return.append(sweater_names[index])
+    pants_paths = []
+    pants_names_return = []
+    for index in pants_index_list:
+        pants_paths.append("Pants/" + str(index + 1) + ".png")
+        pants_names_return.append(pants_names[index])
+    subscription_suggest_return = []
+    for index in range(len(sweater_names_return)):
+        pair = []
+        pair.append(sweater_names_return[index])
+        pair.append(pants_names_return[index])
+        subscription_suggest_return.append(pair)
+    
     
     return jsonify({
         'sweaterImages': sweater_paths,
+        'pantsImages': pants_paths,
+        'subscriptionSuggest': subscription_suggest_return,
     })
 
 # Route to have images on the backend

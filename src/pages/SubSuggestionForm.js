@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./pageStyles.css"
+import { Link } from 'react-router-dom'
  
 export default function SubSuggestionForm() {
   // Form data
@@ -16,6 +17,8 @@ export default function SubSuggestionForm() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState(null)
   const [sweaterImages, setSweaterImages] = useState([])
+  const [pantsImages, setPantsImages] = useState([])
+  const [subscriptionPair, setSubscriptionPair] = useState([])
 
 
   const handleColorInputChange = (event) => {
@@ -57,7 +60,10 @@ export default function SubSuggestionForm() {
  
       // Handle response if necessary
       const data = await response.json()
+      console.log(data)
       setSweaterImages(data.sweaterImages);
+      setPantsImages(data.pantsImages);
+      setSubscriptionPair(data.subscriptionSuggest)
       setSubmitted(true);
     } catch (error) {
       // Capture the error message to display to the user
@@ -140,10 +146,33 @@ export default function SubSuggestionForm() {
 
      
       <div className="clothing-suggestion">
-        <div className="suggest-header-wrapper">{submitted ? <p className="suggest-header">Sweater Suggestions</p> : <></>}</div>
+        <div className="suggest-header-wrapper">{submitted ? <p className="suggest-header">Subscription Suggestions Based On Your Search</p> : <></>}</div>
+        <div className="clothing-suggestion-block">
         {sweaterImages.map((sweater, index) => (
-          <img src={"http://localhost:8080/api/images/" + sweater} alt="Clothing suggestions" className="clothing-suggestion-item" key={index}></img>
+          <img src={"http://localhost:8080/api/images/" + sweater} alt="Sweater suggestions" className="sweater-suggestion-item" key={index}></img>
         ))}
+        </div>
+
+        <div className="clothing-suggestion-block">
+        {pantsImages.map((pant, index) => (
+          <img src={"http://localhost:8080/api/images/" + pant} alt="Pant suggestions" className="pant-suggestion-item" key={index}></img>
+        ))}
+        </div>
+
+        <div className="subscription-suggestion-block">
+        {subscriptionPair.map((subscriptionPair, index) => (
+          <div className="subscription-suggestion-item" key={index}>
+            <strong>Subscription {index + 1}</strong>
+            <p>- {subscriptionPair[0]}</p>
+            <p>- {subscriptionPair[1]}</p>
+            <button className="px-8 py-4 rounded font-medium mr-2 mb-8 suggest-buy-button"><Link to="/cart">Buy</Link></button>
+          </div>
+
+          
+        ))}
+        </div>
+        
+        
       </div>
       </div>
       

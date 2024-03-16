@@ -92,20 +92,57 @@
   }
 
   .suggest-header-wrapper {
-    width: 27%;
+    width: 40%;
   }
 
   .suggest-header {
     text-decoration: underline;
   }
 
-  .clothing-suggestion-item {
+  .clothing-suggestion-block {
+    margin-block: 2rem;
+  }
+
+  .subscription-suggestion-block {
+    margin-inline: 6rem;
+    grid-auto-columns: max-content;
+    justify-content: center;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sweater-suggestion-item {
     width: 28%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: inline-block;
     margin-left: 2em;
     border: 3px solid;
+  }
+  .pant-suggestion-item {
+    width: 28%;
+    aspect-ratio: 1 / 2;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 2em;
+    border: 3px solid;
+  }
+
+  .subscription-suggestion-item {
+    text-align: left;
+  }
+
+  .suggest-buy-button {
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 1rem;
   }
 
 /* Home page styles */
