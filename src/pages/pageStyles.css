@@ -220,3 +220,13 @@
   padding-left: 4rem;
   text-align: right;
 }
+
+.home-big-block-backer,
+.home-green-block-backer {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in {
+  opacity: 1;
+}
