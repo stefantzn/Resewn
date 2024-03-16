@@ -43,7 +43,7 @@ def query_similar():
         sweater_paths.append("Sweater/" + str(index + 1) + ".png")
     
     return jsonify({
-        'sweater-images': sweater_paths,
+        'sweaterImages': sweater_paths,
     })
 
 # Route to have images on the backend
