@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Resewn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Resewn is a platform which allows customers to buy and donate secondhand clothes. We will partner with sustainable clothing brands in order to upcycle our products which are then sold on our platform or recycled another way, leading to 100% recycled products.
+![logo](./public/NewLogo.png)
 
-## Available Scripts
+## Tools Used
+This project was created using React on the front end and Flask on the backend.
 
-In the project directory, you can run:
+Our program also uses pretrained AI models from `sentence-transformers` in order to match user style preferences to our existing products by using word embeddings.
 
-### `npm start`
+## Building the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To build the project, clone this repository
+```
+git clone https://github.com/stefantzn/Resewn.git
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To start only the web service, you can run
+```
+npm run start
+```
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To start the backend, you will have to ensure that you have all the packages need. Refer to the backend guide in the `backend` folder to see a more comprehensive guide to running the backend. To start the server, in the `backend` directory, run
+```
+python3 server.py
+```
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more Resewn in our [pitch presentation](https://www.canva.com/design/DAF_g6dhHkM/UTNHH4SHX4pKNkA7LB6mCg/edit?utm_content=DAF_g6dhHkM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## About
+Resewn was a project created for Hack the Globe 2024. The team behind the project consists of Daniel Tran, Laura Madill, Stefan Tuczynski, and Harry He.
