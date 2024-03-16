@@ -1,0 +1,104 @@
+/* Since the layout bar is 60px logo and 10px padding, you will always find that the layout bar is 80px, just a hacky solution here */
+.image-transition {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    mix-blend-mode: screen;
+    z-index: 5;
+}
+
+.form-header-image {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+    object-position: top center;
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+    z-index: auto;
+}
+
+.form-block-container {
+    position: relative;
+    z-index: 10;
+}
+
+.big-header-block {
+    display: flex;
+}
+
+
+.header-block-column {
+    text-align: right;
+    margin: 10px;
+    width: 50%;
+}
+
+.header-block-text {
+    font-size: 3.5em;
+    max-width: 80%;
+}
+
+.suggest-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field {
+    width: 100%;
+    max-width: 20em;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+  }
+
+  .form-button {
+    background: #274f41;
+    color: #ffffff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-block: 8px;
+    margin-inline: auto;
+  }
+
+  .form-question {
+    display: flex;
+    justify-content: center;
+  }
+
+  .clothing-suggestion {
+    display: inline-block;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .suggest-header-wrapper {
+    width: 27%;
+  }
+
+  .suggest-header {
+    text-decoration: underline;
+  }
+
+  .clothing-suggestion-item {
+    width: 28%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 2em;
+    border: 3px solid;
+  }
